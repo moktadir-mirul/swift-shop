@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Swift Shop
 
-## Getting Started
+**Created by Mirul Moktadir Khan**
 
-First, run the development server:
+-Swift Shop is a modern Next.js e-commerce platform that allows users to browse products, view detailed product pages, and securely log in using Google Authentication via NextAuth. It features an Add Products page for authenticated users, dynamic routing for product details, and responsive design powered by Tailwind CSS.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+✅ Next.js 15 (App Router) for modern React features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+✅ Google Authentication with NextAuth.js
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+✅ Protected Routes using NextAuth middleware
 
-## Learn More
+✅ Dynamic Product Pages with [id] routing
 
-To learn more about Next.js, take a look at the following resources:
+✅ Add Products Form with validation (name, price, description, category, rating)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✅ Responsive Design using Tailwind CSS
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+✅ Axios Integration for API requests
 
-## Deploy on Vercel
+✅ Conditionally Rendered Navbar (shows Add Products when logged in)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+✅ Displays Logged-in User’s Name & Profile Image
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Tech Stack
+
+Frontend: Next.js 15 (App Router), React, Tailwind CSS
+
+Authentication: NextAuth.js (Google OAuth)
+
+HTTP Client: Axios
+

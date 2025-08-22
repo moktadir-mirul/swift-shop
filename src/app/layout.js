@@ -27,10 +27,10 @@ export default function RootLayout({ children }) {
         className={`${inter.className} min-h-screen flex flex-col justify-between`}
       >
         <div>
-          <Navbar></Navbar>
+          <AuthProvider><Navbar></Navbar></AuthProvider>
           <AuthProvider>{children}</AuthProvider>
         </div>
-        <Footer></Footer>
+        <AuthProvider><Footer></Footer></AuthProvider>
       </body>
     </html>
   );

@@ -10,7 +10,6 @@ const Products = () => {
       try {
         const res = await axios.get("http://localhost:3000/products");
         setProducts(res.data);
-        console.log(products);
       } catch (error) {
         console.error("Error fetching products:", error);
       }

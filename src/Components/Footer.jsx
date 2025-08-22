@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,11 +6,12 @@ import { FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaFacebook, FaInstagram, FaPhoneAlt } from "react-icons/fa";
 import { IoLocation } from "react-icons/io5";
-import { FaXTwitter } from "react-icons/fa6";
 import { CiYoutube } from "react-icons/ci";
 import { FaLinkedin } from "react-icons/fa";
+import { useSession } from "next-auth/react";
 
 const Footer = () => {
+  const { data: session } = useSession();
   return (
     <div className="w-full bg-indigo-600 text-gray-100 pt-10 px-10 pb-2">
       <div className="w-11/12 mx-auto flex gap-5 lg:gap-0 flex-col lg:flex-row justify-between items-center lg:items-start pb-5">
@@ -29,10 +31,10 @@ const Footer = () => {
             <Link href={"/"}>Home</Link>
           </li>
           <li>
-            <Link href={"/AllProducts"}>All Products</Link>
+            <Link href={"/allProducts"}>All Products</Link>
           </li>
           <li>
-            <Link href={"/AddProduct"}>Add Product</Link>
+            <Link href={"/addProducts"}>Add Product</Link>
           </li>
             
 

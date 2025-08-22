@@ -13,7 +13,7 @@ export const authOptions = {
   },
   callbacks: {
     async redirect({ url, baseUrl }) {
-      return baseUrl; // always redirect to home page after login
+      return "http://localhost:3001/allProducts";
     },
   },
 };

@@ -11,8 +11,9 @@ async function singleItem(id) {
 }
 
 const singleProduct =async ({params}) => {
+    const { id } = await params;
 
-    const item = await singleItem(params.id);
+    const item = await singleItem(id);
   
     return (
         <div className="flex items-center justify-center bg-gradient-to-br from-indigo-50 to-indigo-100 p-4">
