@@ -49,7 +49,8 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <button className="px-5 py-1 font-bold text-xl bg-white hover:bg-indigo-900 duration-200 hover:text-gray-50 rounded-sm cursor-pointer">Log In</button>
+        <Link href={"/login"}>
+        <button className="px-5 py-1 font-bold text-xl bg-white hover:bg-indigo-900 duration-200 hover:text-gray-50 rounded-sm cursor-pointer">Log In</button></Link>
       </div>
     </div>
     </div>

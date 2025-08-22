@@ -2,8 +2,9 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/Navbar/Navbar";
 import Footer from "@/Components/Footer";
+import AuthProvider from "./context/AuthProvider";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -25,8 +26,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.className} min-h-screen flex flex-col justify-between`}
       >
-        <Navbar></Navbar>
-        {children}
+        <div>
+          <Navbar></Navbar>
+          <AuthProvider>{children}</AuthProvider>
+        </div>
         <Footer></Footer>
       </body>
     </html>
