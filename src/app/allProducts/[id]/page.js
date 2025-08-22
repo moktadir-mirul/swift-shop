@@ -6,7 +6,7 @@ import { FaStar, FaStarHalfAlt, FaHeart, FaHome } from 'react-icons/fa';
 import { GiClothes } from 'react-icons/gi';
 
 async function singleItem(id) {
-    const res = await axios.get(`http://localhost:3000/products/${id}`);
+    const res = await axios.get(`https://swift-shop-server-ruddy.vercel.app/products/${id}`);
     return res.data;
 }
 
@@ -77,7 +77,7 @@ const singleProduct =async ({params}) => {
                 </div>
                 <div>
                     <Link href={"/allProducts"}>
-                    <button className="flex items-center justify-center px-4 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition-colors shadow-md hover:shadow-lg">
+                    <button className="flex items-center justify-center px-4 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition-colors shadow-md hover:shadow-lg cursor-pointer">
                   <FaHome  className="mr-2" />
                   Back to Products
                 </button></Link>

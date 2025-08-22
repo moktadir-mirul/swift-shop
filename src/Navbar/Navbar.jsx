@@ -59,28 +59,30 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          {
-            session ? 
-
+          {session ? (
             <div className="flex flex-col md:flex-row items-center gap-3">
               {session.user?.image && (
-              <img
-                src={session.user.image}
-                alt="User"
-                className="w-8 h-8 rounded-full border border-white"
-              />
-            )}
+                <img
+                  src={session.user.image}
+                  alt="User"
+                  className="w-8 h-8 rounded-full border border-white"
+                />
+              )}
               <span className="text-white">{session.user?.name}</span>
-            <button 
-            onClick={() => signOut()} className="px-5 py-1 font-bold text-xl bg-white hover:bg-indigo-900 duration-200 hover:text-gray-50 rounded-sm cursor-pointer">
-              Log Out
-            </button> 
-            </div>: <Link href={"/login"}>
-            <button className="px-5 py-1 font-bold text-xl bg-white hover:bg-indigo-900 duration-200 hover:text-gray-50 rounded-sm cursor-pointer">
-              Log In
-            </button>
-          </Link>
-          }
+              <button
+                onClick={() => signOut()}
+                className="px-5 py-1 font-bold text-xl bg-white hover:bg-indigo-900 duration-200 hover:text-gray-50 rounded-sm cursor-pointer"
+              >
+                Log Out
+              </button>
+            </div>
+          ) : (
+            <Link href={"/login"}>
+              <button className="px-5 py-1 font-bold text-xl bg-white hover:bg-indigo-900 duration-200 hover:text-gray-50 rounded-sm cursor-pointer">
+                Log In
+              </button>
+            </Link>
+          )}
         </div>
       </div>
     </div>

@@ -8,12 +8,9 @@ export const authOptions = {
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     }),
   ],
-  pages: {
-    signIn: '/login',
-  },
   callbacks: {
     async redirect({ url, baseUrl }) {
-      return "http://localhost:3001/allProducts";
+      return "https://swift-shop-eight.vercel.app/allProducts";
     },
   },
 };

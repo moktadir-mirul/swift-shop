@@ -4,6 +4,8 @@
 
 -Swift Shop is a modern Next.js e-commerce platform that allows users to browse products, view detailed product pages, and securely log in using Google Authentication via NextAuth. It features an Add Products page for authenticated users, dynamic routing for product details, and responsive design powered by Tailwind CSS.
 
+## Live-Link: https://swift-shop-eight.vercel.app/
+
 ## Features
 
 ✅ Next.js 15 (App Router) for modern React features
@@ -32,3 +34,7 @@ Authentication: NextAuth.js (Google OAuth)
 
 HTTP Client: Axios
 
+
+## Live-Link: https://swift-shop-eight.vercel.app/
+
+## Server-Link: https://swift-shop-server-ruddy.vercel.app

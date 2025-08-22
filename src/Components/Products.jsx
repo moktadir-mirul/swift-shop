@@ -8,7 +8,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/products");
+        const res = await axios.get("https://swift-shop-server-ruddy.vercel.app/products");
         setProducts(res.data);
       } catch (error) {
         console.error("Error fetching products:", error);

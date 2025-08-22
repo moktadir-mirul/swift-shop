@@ -16,7 +16,7 @@ const Hero = () => {
             </p>
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
               <Link
-                href="#"
+                href="/allProducts"
                 className="px-8 py-3 text-lg font-semibold rounded cursor-pointer bg-indigo-600 text-gray-50 hover:bg-indigo-800 duration-200"
               >
                 Discover

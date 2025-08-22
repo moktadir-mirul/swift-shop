@@ -33,9 +33,11 @@ const Footer = () => {
           <li>
             <Link href={"/allProducts"}>All Products</Link>
           </li>
-          <li>
+          {
+            session && <li>
             <Link href={"/addProducts"}>Add Product</Link>
           </li>
+          }
             
 
         </div>

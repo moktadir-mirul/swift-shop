@@ -63,7 +63,7 @@ export default function AddProductsPage() {
         },
       };
 
-      await axios.post("http://localhost:3000/products", payload);
+      await axios.post("https://swift-shop-server-ruddy.vercel.app/products", payload);
       setStatus({ loading: false, message: "Product added successfully!" });
       setForm({
         name: "",
