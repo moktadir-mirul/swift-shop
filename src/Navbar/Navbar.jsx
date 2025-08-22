@@ -1,3 +1,4 @@
+'use client';
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,7 +6,7 @@ import Link from "next/link";
 const Navbar = () => {
     const links = <>
     <Link href={"/"}>Home</Link>
-    <Link href={"/AllProducts"}>All Products</Link>
+    <Link href={"/allProducts"}>All Products</Link>
     <Link href={"/AddProduct"}>Add Product</Link>
     </>
   return (
