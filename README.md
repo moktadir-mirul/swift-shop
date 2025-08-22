@@ -28,7 +28,7 @@
 
 ## Tech Stack
 
-Frontend: Next.js 15 (App Router), React, Tailwind CSS
+Frontend: Next.js 15 (App Router), React, Tailwind CSS, DaisyUI
 
 Authentication: NextAuth.js (Google OAuth)
 
@@ -38,3 +38,28 @@ HTTP Client: Axios
 ## Live-Link: https://swift-shop-eight.vercel.app/
 
 ## Server-Link: https://swift-shop-server-ruddy.vercel.app
+
+## 🧑‍💻 How to Run This Project Locally
+To run this project on your local machine, follow the steps below:
+
+### 📁 1. Clone the Repository
+- Use bash/powershell/cmd (any you want) -
+git clone https://github.com/moktadir-mirul/swift-shop
+### 📂 2. Navigate to the Project Directory
+cd your-repo-name
+### 📦 3. Install Dependencies
+npm install
+### 🔥 4. Start the Development Server
+npm run dev
+
+-The app should now be running at http://localhost:3000
+
+**✅ Make sure you have Node.js and npm installed on your machine.**
+
+## Routes Summary
+
+## Live-Link: https://swift-shop-eight.vercel.app/
+
+## Server-Link: https://swift-shop-server-ruddy.vercel.app
+
+## All Products: https://swift-shop-server-ruddy.vercel.app/products
