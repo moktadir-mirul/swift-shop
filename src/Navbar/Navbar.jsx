@@ -16,10 +16,10 @@ const Navbar = () => {
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-8 w-8"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor"
+              stroke="white"
             >
               {" "}
               <path
@@ -38,8 +38,8 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex items-center gap-1">
-            <img src="/images/logo.png" className="w-12 h-12" alt="Swift SHop Logo" />
-            <h1 className="font-bold text-2xl bg-clip-text text-transparent bg-gradient-to-br from-green-200 to-orange-100">Swift Shop</h1>
+            <img src="/images/logo.png" className="w-10 h-10 md:w-12 md:h-12" alt="Swift SHop Logo" />
+            <h1 className="font-bold text-lg md:text-2xl bg-clip-text text-transparent bg-gradient-to-br from-green-200 to-orange-100">Swift Shop</h1>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -48,7 +48,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <button className="px-8 py-1 font-bold text-xl bg-white hover:bg-indigo-400 duration-300 hover:text-gray-300 rounded-md cursor-pointer">Log In</button>
+        <button className="px-5 py-1 font-bold text-xl bg-white hover:bg-indigo-900 duration-200 hover:text-gray-50 rounded-sm cursor-pointer">Log In</button>
       </div>
     </div>
     </div>
