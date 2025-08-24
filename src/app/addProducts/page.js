@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 export default function AddProductsPage() {
   const [form, setForm] = useState({
@@ -74,8 +75,10 @@ export default function AddProductsPage() {
         rate: "",
         count: "",
       });
+      toast.success("Data added Successfully!")
     } catch (err) {
       setStatus({ loading: false, message: "Failed to add product. Please try again." });
+      toast.error("Failed to add product. Please try again.");
     }
   };
 

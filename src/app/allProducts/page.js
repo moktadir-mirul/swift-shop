@@ -2,6 +2,7 @@
 import axios from "axios";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { toast } from "react-toastify";
 
 const AllProducts = () => {
   const [products, setProducts] = useState([]);
@@ -23,6 +24,10 @@ const AllProducts = () => {
       </div>
     );
   }
+
+  const handleToast = () => {
+    toast("Redirecting to the item page.")
+  }
   return (
     <div className="w-full">
       <section className="w-11/12 mx-auto py-10">
@@ -43,7 +48,7 @@ const AllProducts = () => {
                 <div className="card-actions justify-between items-center pt-5">
                   <h1 className="font-bold text-md">Price : ${item.price}</h1>
                   <Link href={`/allProducts/${item._id}`}>
-                    <button className="btn bg-indigo-600 text-gray-50 font-bold hover:bg-indigo-800 rounded-sm">
+                    <button onClick={handleToast} className="btn bg-indigo-600 text-gray-50 font-bold hover:bg-indigo-800 rounded-sm">
                       Show details
                     </button>
                   </Link>
